@@ -1,0 +1,25 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+
+#数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://lcoalhost:3306/blog_db
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: ENC(Lu25MLSvN3H8YpNlM14Y9Q==)
+
+#数据库密码加密
+jasypt:
+  encryptor:
+    algorithm: PBEWITHMD5ANDDES
+    password: secrect          #风险解决：可通过命令行 mvn jasypt:encrypt -Djasypt.encryptor.password=secret_key   打包添加盐
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+
+#Jwt配置
+security:
+  jwt:
+    secret: 3b1eef9f4d6944ca7c864c748fc4fc1c7ee66db08fc6288d85a85445832378526ab5c00e63bdabfbf0243acd1934bdfb661cc06837378d8df2c674e5365cede1
+    expiration: 15    #分钟
