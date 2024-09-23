@@ -5,7 +5,6 @@ import com.example.dto.ResponseResult;
 import com.example.entity.User;
 import com.example.exception.BusinessException;
 import com.example.mapper.UserMapper;
-import com.example.service.UserService;
 import com.example.utils.JwtProcessor;
 import com.example.utils.redis.RedisProcessor;
 import com.example.utils.SecurityUtils;
@@ -14,10 +13,8 @@ import com.example.vo.user.Loginer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 import java.util.Optional;
@@ -37,12 +34,11 @@ import static com.example.utils.UserTransUtils.getUserMap;
 @Slf4j
 @RequiredArgsConstructor
 public class UserController {
-    private final UserService userService;
     private final UserMapper userMapper;
     private final JwtProcessor jwtProcessor;
     private final RedisProcessor redisProcessor;
     @PostMapping("/login")
-    public ResponseResult<LoginResponse> login(@RequestBody Loginer loginer) {
+    public ResponseResult<LoginResponse> login(@Validated @RequestBody Loginer loginer) {
         String email = loginer.getEmail();
         User user = Optional.ofNullable(userMapper.selectByEmail(email)).orElseThrow(()->new BusinessException("用户不存在", HttpStatus.NOT_FOUND));
         boolean matches = SecurityUtils.matches(loginer.getPassword(), user.getPassword());

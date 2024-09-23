@@ -1,7 +1,4 @@
 package com.example.service;
-
-import com.example.mapper.UserMapper;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +10,7 @@ import org.springframework.stereotype.Service;
  * @createTime : [2024/9/23 10:52]
  */
 @Service
-@RequiredArgsConstructor
 @Slf4j
 public class UserService {
-    private final UserMapper userMapper;
 
 }

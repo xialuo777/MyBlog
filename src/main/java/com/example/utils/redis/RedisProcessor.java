@@ -4,9 +4,11 @@ import com.example.exception.BusinessException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -18,9 +20,9 @@ import java.util.concurrent.TimeUnit;
  */
 @Component
 @Slf4j
-@RequiredArgsConstructor
 public class RedisProcessor {
-    private final RedisTemplate<String, Object> redisTemplate;
+    @Resource
+    private RedisTemplate<String, Object> redisTemplate;
 
     public void set(String key, Object value) {
         redisTemplate.opsForValue().set(key, value);
