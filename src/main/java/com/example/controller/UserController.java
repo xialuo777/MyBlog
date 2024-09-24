@@ -6,15 +6,18 @@ import com.example.entity.User;
 import com.example.exception.BusinessException;
 import com.example.mapper.UserMapper;
 import com.example.utils.JwtProcessor;
-import com.example.utils.redis.RedisProcessor;
 import com.example.utils.SecurityUtils;
+import com.example.utils.redis.RedisProcessor;
 import com.example.utils.redis.RedisTransKey;
 import com.example.vo.user.Loginer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 import java.util.Optional;
@@ -40,10 +43,10 @@ public class UserController {
     @PostMapping("/login")
     public ResponseResult<LoginResponse> login(@Validated @RequestBody Loginer loginer) {
         String email = loginer.getEmail();
-        User user = Optional.ofNullable(userMapper.selectByEmail(email)).orElseThrow(()->new BusinessException("用户不存在", HttpStatus.NOT_FOUND));
+        User user = Optional.ofNullable(userMapper.selectByEmail(email)).orElseThrow(()->new BusinessException("用户不存在"));
         boolean matches = SecurityUtils.matches(loginer.getPassword(), user.getPassword());
         if (!matches){
-            throw new BusinessException("密码错误", HttpStatus.FORBIDDEN);
+            throw new BusinessException("密码错误",HttpStatus.OK);
         }
         Map<String, Object> userMap = getUserMap(user);
         String token = jwtProcessor.generateToken(userMap);
