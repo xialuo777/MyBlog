@@ -155,4 +155,20 @@
     from user
     where email = #{email,jdbcType=VARCHAR}
   </select>
+
+  <select id="selectUsersByNickName" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user where nick_name like concat ('%', #{nickName}, '%')
+    </select>
+
+  <select id="selectUsers" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+  </select>
+
+  <select id="getTotalCount" resultType="int">
+    select count(1) from user
+  </select>
 </mapper>

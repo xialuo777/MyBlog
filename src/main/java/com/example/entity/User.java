@@ -1,6 +1,5 @@
 package com.example.entity;
 
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;

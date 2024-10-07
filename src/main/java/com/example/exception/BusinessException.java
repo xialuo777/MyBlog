@@ -25,17 +25,14 @@ public class BusinessException extends RuntimeException {
 
     public BusinessException(String msg) {
         super(msg);
-        this.msg = msg;
     }
 
     public BusinessException(String msg, Object... params) {
         super(msg);
-        this.msg = msg;
         this.params = params;
     }
     public BusinessException(String msg, HttpStatus httpResponseCode, Object... params) {
         super(msg);
-        this.msg = msg;
         this.params = params;
         this.httpStatus = httpResponseCode;
     }
@@ -43,14 +40,12 @@ public class BusinessException extends RuntimeException {
     public BusinessException(String msg, String code, Object... params) {
         super(msg);
         this.code = code;
-        this.msg = msg;
         this.params = params;
     }
 
     public BusinessException(String code, String msg, HttpStatus httpStatus, Object... params) {
         super(msg);
         this.code = code;
-        this.msg = msg;
         this.httpStatus = httpStatus;
         this.params = params;
     }

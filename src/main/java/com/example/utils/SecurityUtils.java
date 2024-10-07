@@ -31,4 +31,5 @@ public class SecurityUtils {
     public static boolean matches(String password, String encodePassword) {
         return bCryptPasswordEncoder.matches(password, encodePassword);
     }
+
 }

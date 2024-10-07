@@ -44,9 +44,9 @@ public class JwtProcessor {
                 .compact();
     }
 
-    public boolean validateToken(String token, Long userId) {
+    public boolean validateToken(String token, String account) {
         Map<String, Object> userMap = extractUserMap(token);
-        return userMap.get(Constant.USER_MAP_KEY_ID).equals(userId);
+        return userMap.get(Constant.USER_MAP_KEY_ACCOUNT).equals(account);
     }
 
     public Map<String, Object> extractUserMap(String token) {

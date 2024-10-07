@@ -8,12 +8,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
+import org.springframework.util.PathMatcher;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
+
+import static com.example.constant.Constant.ALLOWED_PATHS;
 
 /**
  * [一句话描述该类的功能]
@@ -28,6 +31,7 @@ import java.util.Map;
 public class AuthonticationFilter implements Filter {
     private final JwtProcessor jwtProcessor;
     private final CurrentUserHolder currentUserHolder;
+    private final PathMatcher pathMatcher;
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
@@ -37,9 +41,11 @@ public class AuthonticationFilter implements Filter {
         String accessToken = request.getHeader(Constant.AUTHORIZATION);
         String requestURI = request.getRequestURI();
         try {
-            if (Constant.ALLOWED_PATHS.contains(requestURI)) {
-                filterChain.doFilter(request, response);
-                return;
+            for (String path : ALLOWED_PATHS) {
+                if (pathMatcher.match(path, requestURI)) {
+                    filterChain.doFilter(request, response);
+                    return;
+                }
             }
             Map<String, Object> userMap = jwtProcessor.extractUserMap(accessToken);
             if (userMap == null || !userMap.containsKey(Constant.USER_MAP_KEY_ID)
