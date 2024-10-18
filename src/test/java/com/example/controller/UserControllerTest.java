@@ -50,6 +50,7 @@ class UserControllerTest {
         when(redisProcessor.get(anyString())).thenReturn(Optional.of(mockEmailCodeBo));
 
     }
+
     @Test
     @DisplayName("获取邮箱验证码")
     void getCode1() {
@@ -75,6 +76,7 @@ class UserControllerTest {
         System.out.println(responseEntity.getBody());
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
     }
+
     @Test
     @Sql("/testcase/sql/user/initUser.sql")
     @DisplayName("用户注册-邮箱输入有误")
@@ -83,6 +85,7 @@ class UserControllerTest {
         ResponseEntity<String> responseEntity = testRestTemplate.postForEntity("/users/register", register, String.class);
         System.out.println(responseEntity.getBody());
     }
+
     @Test
     @Sql("/testcase/sql/user/initUser.sql")
     @DisplayName("用户注册-邮箱已注册")
@@ -91,6 +94,7 @@ class UserControllerTest {
         ResponseEntity<String> responseEntity = testRestTemplate.postForEntity("/users/register", register, String.class);
         System.out.println(responseEntity.getBody());
     }
+
     @Test
     @Sql("/testcase/sql/user/initUser.sql")
     @DisplayName("用户注册-密码不一致")
@@ -99,6 +103,7 @@ class UserControllerTest {
         ResponseEntity<String> responseEntity = testRestTemplate.postForEntity("/users/register", register, String.class);
         System.out.println(responseEntity.getBody());
     }
+
     @Test
     @Sql("/testcase/sql/user/initUser.sql")
     @DisplayName("用户注册-请先获取邮箱验证码")
@@ -108,6 +113,7 @@ class UserControllerTest {
         ResponseEntity<String> responseEntity = testRestTemplate.postForEntity("/users/register", register, String.class);
         System.out.println(responseEntity.getBody());
     }
+
     @Test
     @Sql("/testcase/sql/user/initUser.sql")
     @DisplayName("用户注册-验证码输入有误")
@@ -116,6 +122,7 @@ class UserControllerTest {
         ResponseEntity<String> responseEntity = testRestTemplate.postForEntity("/users/register", register, String.class);
         System.out.println(responseEntity.getBody());
     }
+
     @Test
     @DisplayName("正常登录")
     @Sql("/testcase/sql/user/initUser.sql")
@@ -126,6 +133,7 @@ class UserControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertTrue(response.getBody().contains("操作成功"));
     }
+
     @Test
     @DisplayName("登录-密码不正确")
     @Sql("/testcase/sql/user/initUser.sql")
@@ -135,6 +143,7 @@ class UserControllerTest {
         System.out.println(response.getBody());
         assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
     }
+
     @Test
     @DisplayName("登录-用户不存在")
     @Sql("/testcase/sql/user/initUser.sql")
@@ -150,7 +159,7 @@ class UserControllerTest {
     @DisplayName("刷新令牌")
     public void testRefreshToken1() {
         String refreshToken = "refreshToken";
-        Map<String,Object> userMap = new HashMap<>();
+        Map<String, Object> userMap = new HashMap<>();
         userMap.put(Constant.USER_MAP_KEY_ID, 11111111L);
         userMap.put(Constant.USER_MAP_KEY_NICK_NAME, "user");
         userMap.put(Constant.USER_MAP_KEY_ACCOUNT, "user");
@@ -162,12 +171,13 @@ class UserControllerTest {
         System.out.println(response.getBody());
         assertTrue(response.getBody().contains("操作成功"));
     }
+
     @Test
     @Sql("/testcase/sql/user/initUser.sql")
     @DisplayName("刷新令牌-refreshToken过期")
     public void testRefreshToken2() {
         String refreshToken = "refreshToken";
-        Map<String,Object> userMap = new HashMap<>();
+        Map<String, Object> userMap = new HashMap<>();
         userMap.put(Constant.USER_MAP_KEY_ID, 11111111L);
         userMap.put(Constant.USER_MAP_KEY_NICK_NAME, "user");
         userMap.put(Constant.USER_MAP_KEY_ACCOUNT, "user");
@@ -183,7 +193,7 @@ class UserControllerTest {
     @DisplayName("刷新令牌-refreshToken不一致")
     public void testRefreshToken3() {
         String refreshToken = "refreshToken";
-        Map<String,Object> userMap = new HashMap<>();
+        Map<String, Object> userMap = new HashMap<>();
         userMap.put(Constant.USER_MAP_KEY_ID, 11111111L);
         userMap.put(Constant.USER_MAP_KEY_NICK_NAME, "user");
         userMap.put(Constant.USER_MAP_KEY_ACCOUNT, "user");
