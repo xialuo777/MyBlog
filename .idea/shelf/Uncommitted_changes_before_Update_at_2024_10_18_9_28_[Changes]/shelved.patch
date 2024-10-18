@@ -1,0 +1,22 @@
+Index: src/main/java/com/example/config/GitTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/config/GitTest.java b/src/main/java/com/example/config/GitTest.java
+new file mode 100644
+--- /dev/null	(date 1729214643601)
++++ b/src/main/java/com/example/config/GitTest.java	(date 1729214643601)
+@@ -0,0 +1,12 @@
++package com.example.config;
++
++/**
++ * [git测试]
++ *
++ * @author : [24360]
++ * @version : [v1.0]
++ * @createTime : [2024/10/18 9:23]
++ */
++
++public class GitTest {
++}

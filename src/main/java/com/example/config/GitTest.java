@@ -14,5 +14,6 @@ public class GitTest {
 
     public static void main(String[] args) {
         log.info("git dev test");
+        log.info("git dev1 test");
     }
 }

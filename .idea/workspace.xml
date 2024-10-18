@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="995ed046-0bf0-4e5b-8acf-a19252981f0b" name="Changes" comment="GitTest-dev1" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="corretto-1.8 (3)" />
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="corretto-1.8 (3)" />
+  </component>
+  <component name="ProjectId" id="2mRxij9JTB4L29qXSp6rtPzc63x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "E:/project/MyBlog-dev2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "722bd36509ab6c9baa812941ed00746c",
+    "two.files.diff.last.used.file": "E:/project/MyBlog/src/main/java/com/example/authenticationFilter.java",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.service" />
+      <recent name="com.example.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\MyBlog\src\test\resources\testcase\sql\user" />
+      <recent name="E:\project\MyBlog\src\main\java\com\example\vo" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.controller" />
+      <recent name="com.example.mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserControllerTest.testRefreshToken3">
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testRefreshToken1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testRefreshToken1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testRefreshToken2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testRefreshToken2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testRefreshToken3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testRefreshToken3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testRegister3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testRegister3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerTest.testRefreshToken3" />
+        <item itemvalue="JUnit.UserControllerTest.testRefreshToken2" />
+        <item itemvalue="JUnit.UserControllerTest.testRefreshToken1" />
+        <item itemvalue="JUnit.UserControllerTest.testRegister3" />
+        <item itemvalue="JUnit.UserControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="995ed046-0bf0-4e5b-8acf-a19252981f0b" name="Changes" comment="" />
+      <created>1727053320001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727053320001</updated>
+      <workItem from="1727053321252" duration="14054000" />
+      <workItem from="1727089684123" duration="19000" />
+      <workItem from="1727093047385" duration="26000" />
+      <workItem from="1727100162609" duration="227000" />
+      <workItem from="1727147915736" duration="26000" />
+      <workItem from="1727163605936" duration="9123000" />
+      <workItem from="1727177243033" duration="65000" />
+      <workItem from="1727177538186" duration="7000" />
+      <workItem from="1727181827521" duration="516000" />
+      <workItem from="1727225336184" duration="3668000" />
+      <workItem from="1728122584532" duration="1336000" />
+      <workItem from="1728136194454" duration="67000" />
+      <workItem from="1728265263616" duration="27558000" />
+      <workItem from="1728387294250" duration="537000" />
+      <workItem from="1728808777597" duration="171000" />
+      <workItem from="1728809449984" duration="606000" />
+      <workItem from="1728867279939" duration="602000" />
+      <workItem from="1728893343020" duration="18000" />
+      <workItem from="1728916985869" duration="7000" />
+      <workItem from="1728984314965" duration="44000" />
+      <workItem from="1728984483625" duration="4499000" />
+      <workItem from="1729049551994" duration="233000" />
+      <workItem from="1729058001809" duration="2451000" />
+      <workItem from="1729213564452" duration="469000" />
+      <workItem from="1729214414091" duration="4256000" />
+    </task>
+    <task id="LOCAL-00001" summary="UserController 登录功能">
+      <created>1727078415446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727078415446</updated>
+    </task>
+    <task id="LOCAL-00002" summary="UserController 登录功能">
+      <created>1727100382306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727100382306</updated>
+    </task>
+    <task id="LOCAL-00003" summary="单元测试+部分代码修改">
+      <created>1727177299690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727177299690</updated>
+    </task>
+    <task id="LOCAL-00004" summary="user功能补齐+blog+comment功能+部分单元测试">
+      <created>1728300840447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728300840447</updated>
+    </task>
+    <task id="LOCAL-00005" summary="GitTest">
+      <created>1729214915783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729214915783</updated>
+    </task>
+    <task id="LOCAL-00006" summary="GitTest">
+      <created>1729215060500</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729215060500</updated>
+    </task>
+    <task id="LOCAL-00007" summary="GitTest">
+      <created>1729215078604</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729215078604</updated>
+    </task>
+    <task id="LOCAL-00008" summary="GitTest-dev1">
+      <created>1729218446661</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729218446661</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UserController 登录功能" />
+    <MESSAGE value="单元测试+部分代码修改" />
+    <MESSAGE value="user功能补齐+blog+comment功能+部分单元测试" />
+    <MESSAGE value="GitTest" />
+    <MESSAGE value="GitTest-dev1" />
+    <option name="LAST_COMMIT_MESSAGE" value="GitTest-dev1" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MyBlog$UserControllerTest.ic" NAME="UserControllerTest Coverage Results" MODIFIED="1728284544466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.controller.*</FILTER>
+    </SUITE>
+  </component>
+</project>
