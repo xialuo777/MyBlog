@@ -1,5 +1,7 @@
 package com.example.config;
 
+import org.apache.tomcat.util.http.fileupload.MultipartStream;
+
 /**
  * [git测试]
  *
@@ -9,4 +11,5 @@ package com.example.config;
  */
 
 public class GitTest {
+    MultipartStream.ItemInputStream;
 }
